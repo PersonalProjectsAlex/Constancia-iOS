@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="iN0-l3-epB" customClass="CustomCalloutView" customModule="beerapp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="54" height="47"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3rl-i6-SHW">
+                    <rect key="frame" x="0.0" y="0.0" width="54" height="47"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ubication_restaurant" translatesAutoresizingMaskIntoConstraints="NO" id="JRQ-Fj-oPe">
+                            <rect key="frame" x="0.0" y="0.0" width="54" height="47"/>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.94999998807907104" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ico-blank_state" translatesAutoresizingMaskIntoConstraints="NO" id="4Th-5g-7ZJ">
+                            <rect key="frame" x="4" y="3" width="46" height="35"/>
+                            <color key="backgroundColor" red="0.1215686275" green="0.1764705882" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidthView">
+                                    <real key="value" value="0.5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColorView">
+                                    <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusView">
+                                    <real key="value" value="0.0"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="4Th-5g-7ZJ" firstAttribute="top" secondItem="3rl-i6-SHW" secondAttribute="topMargin" constant="-5" id="BQy-c0-Sba"/>
+                        <constraint firstItem="JRQ-Fj-oPe" firstAttribute="top" secondItem="3rl-i6-SHW" secondAttribute="top" id="KWQ-pK-HFD"/>
+                        <constraint firstItem="JRQ-Fj-oPe" firstAttribute="leading" secondItem="3rl-i6-SHW" secondAttribute="leading" id="X8w-6N-6gp"/>
+                        <constraint firstAttribute="bottom" secondItem="4Th-5g-7ZJ" secondAttribute="bottom" constant="9" id="ZEG-6a-pQA"/>
+                        <constraint firstAttribute="trailing" secondItem="JRQ-Fj-oPe" secondAttribute="trailing" id="aJ6-xK-CXS"/>
+                        <constraint firstAttribute="bottom" secondItem="JRQ-Fj-oPe" secondAttribute="bottom" id="jQU-Mc-EwU"/>
+                        <constraint firstItem="JRQ-Fj-oPe" firstAttribute="centerX" secondItem="4Th-5g-7ZJ" secondAttribute="centerX" id="kMf-AV-hCT"/>
+                        <constraint firstItem="4Th-5g-7ZJ" firstAttribute="leading" secondItem="3rl-i6-SHW" secondAttribute="leadingMargin" constant="-4" id="nu0-Xm-Pqc"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusView">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidthView">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColorView">
+                            <color key="value" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowRadiusView">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="size" keyPath="shadowOffsetView">
+                            <size key="value" width="1" height="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColorView">
+                            <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="3rl-i6-SHW" secondAttribute="trailing" id="AAO-DM-mCy"/>
+                <constraint firstAttribute="bottom" secondItem="3rl-i6-SHW" secondAttribute="bottom" id="pMz-wE-CfO"/>
+                <constraint firstItem="3rl-i6-SHW" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="sB4-ub-7iJ"/>
+                <constraint firstItem="3rl-i6-SHW" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ulh-Ds-mHK"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="iconShopsImageView" destination="4Th-5g-7ZJ" id="C1P-4q-qkT"/>
+                <outlet property="typeImageView" destination="JRQ-Fj-oPe" id="lD7-N3-i2N"/>
+            </connections>
+            <point key="canvasLocation" x="597" y="190.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ico-blank_state" width="108" height="111"/>
+        <image name="ubication_restaurant" width="67" height="57"/>
+    </resources>
+</document>

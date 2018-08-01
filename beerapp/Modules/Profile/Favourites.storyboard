@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lE8-Qd-2pF">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Check In-->
+        <scene sceneID="6Rs-kO-QYc">
+            <objects>
+                <navigationController storyboardIdentifier="FavouritiesID" automaticallyAdjustsScrollViewInsets="NO" id="lE8-Qd-2pF" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Check In" image="icon-tabbar-checkin" id="mjf-lT-ULJ"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="Vlz-iA-AMr">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.10980392160000001" green="0.14901960780000001" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.33333333329999998" green="0.74901960779999999" blue="0.80392156859999997" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="f0t-Oc-3Vq" kind="relationship" relationship="rootViewController" id="zYB-no-kYa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="69y-In-Zt9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2554" y="58"/>
+        </scene>
+        <!--Favoritos-->
+        <scene sceneID="Bfp-2A-LHL">
+            <objects>
+                <viewController storyboardIdentifier="FavouritesControllerID" id="f0t-Oc-3Vq" customClass="FavouritesController" customModule="beerapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Wce-RG-WdW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SIs-Zo-MWW">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <color key="backgroundColor" red="0.92156862750000001" green="0.92156862750000001" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="separatorColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="Exe-pm-gHC">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="0.0"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.92156862750000001" green="0.92156862750000001" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </view>
+                                <connections>
+                                    <outlet property="dataSource" destination="f0t-Oc-3Vq" id="AVl-vc-f7j"/>
+                                    <outlet property="delegate" destination="f0t-Oc-3Vq" id="rd5-Kx-3Bz"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92156862750000001" green="0.92156862750000001" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="SIs-Zo-MWW" firstAttribute="trailing" secondItem="Ehm-2N-obo" secondAttribute="trailing" id="KEr-ge-vGe"/>
+                            <constraint firstItem="Ehm-2N-obo" firstAttribute="bottom" secondItem="SIs-Zo-MWW" secondAttribute="bottom" id="RbE-CP-1Ss"/>
+                            <constraint firstItem="SIs-Zo-MWW" firstAttribute="leading" secondItem="Ehm-2N-obo" secondAttribute="leading" id="WgW-fk-Yhg"/>
+                            <constraint firstItem="SIs-Zo-MWW" firstAttribute="top" secondItem="Wce-RG-WdW" secondAttribute="top" id="kc7-bc-8wE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ehm-2N-obo"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Favoritos" id="BJW-qJ-cLC"/>
+                    <connections>
+                        <outlet property="tableView" destination="SIs-Zo-MWW" id="DRM-XK-dh6"/>
+                        <segue destination="U9V-Wt-Gt1" kind="presentation" identifier="FavouritesToCommerceDetailSegue" modalPresentationStyle="overFullScreen" modalTransitionStyle="crossDissolve" id="eBo-Gh-XUB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wZT-Ew-eKm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3283" y="58"/>
+        </scene>
+        <!--ShopDetailControllerID-->
+        <scene sceneID="oZA-iX-55N">
+            <objects>
+                <viewControllerPlaceholder storyboardName="FIndPlaces" referencedIdentifier="ShopDetailControllerID" id="U9V-Wt-Gt1" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eVr-zd-C69" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3958" y="57"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon-tabbar-checkin" width="27" height="28"/>
+    </resources>
+</document>

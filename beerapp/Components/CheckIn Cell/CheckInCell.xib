@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </array>
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="CheckInCell" rowHeight="66" id="1aO-Jh-sMS" customClass="CheckInCell" customModule="beerapp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="356" height="63"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1aO-Jh-sMS" id="cz0-gX-Wgu">
+                <rect key="frame" x="0.0" y="0.0" width="356" height="62.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="JHU-FZ-hyE">
+                        <rect key="frame" x="14" y="14" width="209" height="33.5"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-main-ilc" translatesAutoresizingMaskIntoConstraints="NO" id="aXv-em-VWX">
+                                <rect key="frame" x="0.0" y="0.0" width="65" height="33.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="gO7-zR-bPs"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="0vz-T8-Z5H">
+                                <rect key="frame" x="77" y="0.0" width="132" height="33.5"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ig5-RE-ndZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="132" height="16.5"/>
+                                        <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="12"/>
+                                        <color key="textColor" red="0.12941176469999999" green="0.20392156859999999" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Rm-Fv-6xJ">
+                                        <rect key="frame" x="0.0" y="17.5" width="132" height="16"/>
+                                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="10"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="1te-lE-LQ8">
+                        <rect key="frame" x="231" y="14" width="125" height="34.5"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Jo-KQ-fSn">
+                                <rect key="frame" x="0.0" y="0.0" width="125" height="34.5"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YgF-Tl-5UD">
+                                        <rect key="frame" x="0.0" y="5" width="1" height="25"/>
+                                        <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="1" id="XRG-bY-Sik"/>
+                                            <constraint firstAttribute="height" constant="25" id="gDd-1w-5DR"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sm4-5L-vtN">
+                                        <rect key="frame" x="9" y="10.5" width="108" height="14.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="108" id="Dpe-Ie-iar"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
+                                        <color key="textColor" red="0.12941176469999999" green="0.20392156859999999" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="YgF-Tl-5UD" firstAttribute="centerY" secondItem="8Jo-KQ-fSn" secondAttribute="centerY" id="2xM-Px-ShQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="Sm4-5L-vtN" secondAttribute="trailing" constant="8" id="639-9F-Puo"/>
+                                    <constraint firstItem="YgF-Tl-5UD" firstAttribute="leading" secondItem="8Jo-KQ-fSn" secondAttribute="leading" id="ogq-ue-JvG"/>
+                                    <constraint firstItem="Sm4-5L-vtN" firstAttribute="leading" secondItem="YgF-Tl-5UD" secondAttribute="trailing" constant="8" symbolic="YES" id="t4y-ro-7XH"/>
+                                    <constraint firstItem="YgF-Tl-5UD" firstAttribute="centerY" secondItem="Sm4-5L-vtN" secondAttribute="centerY" id="xLq-SK-Vb2"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="1te-lE-LQ8" firstAttribute="centerY" secondItem="cz0-gX-Wgu" secondAttribute="centerY" id="3fJ-Jw-zOl"/>
+                    <constraint firstItem="JHU-FZ-hyE" firstAttribute="centerY" secondItem="1te-lE-LQ8" secondAttribute="centerY" constant="-0.5" id="AUe-3W-PzD"/>
+                    <constraint firstItem="1te-lE-LQ8" firstAttribute="leading" secondItem="cz0-gX-Wgu" secondAttribute="leading" constant="231.5" id="BsY-Ff-735"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="1te-lE-LQ8" secondAttribute="trailing" constant="-16" id="F9f-TB-YPg"/>
+                    <constraint firstItem="JHU-FZ-hyE" firstAttribute="top" secondItem="1te-lE-LQ8" secondAttribute="top" id="HBx-SW-4BR"/>
+                    <constraint firstItem="1te-lE-LQ8" firstAttribute="leading" secondItem="JHU-FZ-hyE" secondAttribute="trailing" constant="8" symbolic="YES" id="STl-VD-mma"/>
+                    <constraint firstItem="JHU-FZ-hyE" firstAttribute="top" secondItem="cz0-gX-Wgu" secondAttribute="topMargin" constant="3" id="aLG-69-O8i"/>
+                    <constraint firstItem="JHU-FZ-hyE" firstAttribute="leading" secondItem="cz0-gX-Wgu" secondAttribute="leadingMargin" constant="-2.5" id="v2p-8d-7KX"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="38F-hy-VAW"/>
+            <connections>
+                <outlet property="addressRestaurantLabel" destination="7Rm-Fv-6xJ" id="aNj-mx-2W5"/>
+                <outlet property="coinsLabel" destination="Sm4-5L-vtN" id="oOW-vm-vQZ"/>
+                <outlet property="logoImageView" destination="aXv-em-VWX" id="x69-1g-6vG"/>
+                <outlet property="restaurantNameLabel" destination="ig5-RE-ndZ" id="uV7-Am-FZ2"/>
+            </connections>
+            <point key="canvasLocation" x="44" y="61.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon-main-ilc" width="48" height="31"/>
+    </resources>
+</document>
